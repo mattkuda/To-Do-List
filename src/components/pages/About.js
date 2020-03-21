@@ -18,7 +18,7 @@ function About() {
             <div style={getStyle()}>
             <h1 position="absolute">About</h1>
                 <p>This is my first To-Do List app!</p>
-                <p>I put my ReactJS fundamentals to the test in order to complete this project.</p>
+                <p>I put my ReactJS fundamentals to the test in order to complete this project....sdfds....</p>
                 <p>Moving forward, I'm excited to build more complex applications!</p>
             </div>
         </React.Fragment>
