@@ -1,38 +1,106 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: #D7E4FF;
+}
+
+h1{
+  line-height: "200%";
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #333;
+  text-decoration: none;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 0 10%;  /*very light blue */
+  position: relative;
+ 
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background: #666;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkBtn {
+    margin-right: 15px;
+    background: white;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    float:left;
+}
+
+.checkBtn:hover {
+  background: #f4f4f4;
+}
+
+.checkBtn:hover:after{
+  content:"";
+  position: absolute;
+  height: 7px;
+  width: 13px;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+ 
+  transform: translate(37%, 75%) rotate(-45deg);
+}
+
+.checkDoneBtn {
+  margin-right: 15px;
+  background: darkgrey;
+  border: 1px solid gray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  float:left;
+}
+
+.checkDoneBtn:after{
+  content:"";
+  position: absolute;
+  height: 7px;
+  width: 13px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+
+  transform: translate(37%, 75%) rotate(-45deg);
+}
+
+.checkDoneBtn:hover {
+background: #f4f4f4;
+}
+
+.checkDoneBtn:hover:after{
+content:"";
+position: absolute;
+height: 7px;
+width: 13px;
+border-left: 1px solid gray;
+border-bottom: 1px solid gray;
+
+transform: translate(37%, 75%) rotate(-45deg);
 }
